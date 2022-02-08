@@ -17,7 +17,7 @@ MAX_RADIANS_PER_SEC: !degrees 17.629
 
 # Number of head segments
 # First segment would be yaw, second would be pitch
-NUMBER_OF_HEAD_SEGMENTS: 2
+NUMBER_OF_HEAD_SEGMENTS: 0
 
 # Number of Legs
 NUMBER_OF_LEGS: 6
