@@ -9,7 +9,7 @@
     <include file="$(find hexapod_bringup)/launch/components/sounds.launch" />
     <include file="$(find hexapod_bringup)/launch/hexapod_simple.launch">
       <arg name="config" value="$(arg config)"/>
-      <arg name="joy_mapping" default="$(arg joy_mapping).yaml"/>
+      <arg name="joy_mapping" default="$(arg joy_mapping)"/>
     </include>
 
 <!--    <include file="$(find hexapod_bringup)/launch/components/imu_mpu9255.launch" />-->
