@@ -30,7 +30,9 @@ In addition to the ROS packages mentioned in the orignal project (switch indigo 
   *  Since this is an I2C sensor you need to have I2C activated on yopur PI and you have to install the WiringPi library (https://github.com/wbeebe/WiringPi).
   *  Ignore warnings regarding naming conventions
 * Astra Camera Node
-  * http://wiki.ros.org/astra_camera   
+  * http://wiki.ros.org/astra_camera  
+* XBox Driver
+  * sudo apt-get install xboxdrv  
   
 
 ## 3. Compiling
