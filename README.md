@@ -5,7 +5,7 @@ This is a fork of the original Hexpod-ROS project by Kevin M. Ochs et al. (https
 
 The original project was developed based on ROS Indigo targeted at Ubuntu 14.04, Raspberry Pi2 or ODroid.
 
-This fork has been ported to ROS-Noetic on Ubuntu 20.04 LTS running on a RaspberryPi 4 (4GB).
+With this fork the original project is ported to ROS-Noetic on Ubuntu 20.04 LTS running on a RaspberryPi 4 (4GB).
 
 ## 1. Hardware
 
