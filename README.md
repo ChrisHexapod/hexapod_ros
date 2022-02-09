@@ -5,7 +5,8 @@ This is a fork of the original Hexpod-ROS project by Kevin M. Ochs et al. (https
 
 The original project was developed based on ROS Indigo targeted at Ubuntu 14.04, Raspberry Pi2 or ODroid.
 
-With this fork the original project is ported to ROS-Noetic on Ubuntu 20.04 LTS running on a RaspberryPi 4 (4GB).
+With this fork the original project is ported to ROS-Noetic on Ubuntu 20.04 LTS running on a RaspberryPi 4 (4GB).  
+
 
 ## 1. Hardware
 
@@ -56,3 +57,6 @@ Since we are using an Ubuntu server image, we cannot start any GUI applications 
 
 If your hexapod acts like in slow-motion please check if you have specified the correct id's in phantomX.yaml. The original phantomX.yaml file specifies two additional ax12 for a camera gimbal and the ID of another ax12a was changed to 19 (instead of 1). The phantomX.yaml file in this branch uses the ID's as given in the PhantomX mark III assembly instructions and the camera gimbal has been removed.
 
+## 6. Things to Do
+
+* Upgrade the Dynamixel SDK from 3.6.0 to 3.7.31
