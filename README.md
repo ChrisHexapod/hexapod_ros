@@ -28,7 +28,7 @@ In addition to the ROS packages mentioned in the original project (since we swit
 
 * ROS MPU9255 Node by Mauricio Leiton Lázaro
   *  URL: https://github.com/mdleiton/MPU9255
-  *  Since this is an I2C sensor you need to have I2C activated on yopur PI and you have to install the WiringPi library (https://github.com/wbeebe/WiringPi).
+  *  Since this is an I2C sensor you need to have I2C activated on your Pi and you have to install the WiringPi library too (https://github.com/wbeebe/WiringPi).
   *  Ignore warnings regarding naming conventions
 * Astra Camera Node
   * http://wiki.ros.org/astra_camera  
