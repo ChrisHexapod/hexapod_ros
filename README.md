@@ -41,7 +41,11 @@ The orignal instruction asks to use a number of compiler options in order to opt
 
 Please use: -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72
 
-## 4. Troubleshooting
+## 4. Assumptions
+
+Since we are using an Ubuntu server image, we cannot start any GUI applications on the PI. Therefore launch files have been split to robot specific ones and those that should be started on a GUI device.
+
+## 5. Troubleshooting
 
 If your hexapod acts like in slow-motion please check if you have specified the correct id's in phantomX.yaml. The original phantomX.yaml file specifies two additional ax12 for a camera gimbal and the ID of another ax12a was changed to 19 (instead of 1). The phantomX.yaml file in this branch uses the ID's as given in the PhantomX mark III assembly instructions and the camera gimbal has been removed.
 
