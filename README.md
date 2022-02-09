@@ -12,9 +12,10 @@ This fork has been ported to ROS-Noetic on Ubuntu 20.04 LTS running on a Raspber
 The project makes use of a 
 
 * PhantomX Mark III
-  * The ArbotixM Board was replaced by a U2D2-Connector
-  * For connecting all legs we also need a U2D2 PowerHub
+  * The ArbotixM Board was replaced by a U2D2, a USB communication converter. Please make sure that there is enough space to the upper deck.  
+  * Since the U2D2 has only one ttl-level port you either need a U2D2 PowerHub, or the old 6 port hub
   * Since connectors have changed an adapter cable is needed too
+  * You also have to think about power supply for your RaspberryPi. Here an y-cable, a 5V,3A BEC and a spare USB-C connector were used
 * Sensors
   * IMU: MPU2955
   * DepthSensor: Orbbec Astra Camera
@@ -23,7 +24,7 @@ The project makes use of a
 
 ## 2. Installation
 
-In addition to the ROS packages mentioned in the orignal project (switch indigo to noetic) you also need:
+In addition to the ROS packages mentioned in the original project (since we switched from  indigo to noetic) you also need:
 
 * ROS MPU9255 Node by Mauricio Leiton Lázaro
   *  URL: https://github.com/mdleiton/MPU9255
