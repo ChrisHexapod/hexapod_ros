@@ -43,7 +43,12 @@ Please use: -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72
 
 ## 4. Assumptions
 
-Since we are using an Ubuntu server image, we cannot start any GUI applications on the PI. Therefore launch files have been split to robot specific ones and those that should be started on a GUI device.
+Since we are using an Ubuntu server image, we cannot start any GUI applications on the PI. Therefore launch files have been split to robot specific ones and those that should be started on a GUI device. The easiest way is to clone the repo to a remote computer and use:
+
+* RPI
+  * roslaunch hexapod_bringup hexapod_full.launch 
+* Remote Computer
+  * roslaunch hexapod_bringup rviz.launch
 
 ## 5. Troubleshooting
 
