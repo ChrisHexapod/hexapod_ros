@@ -27,3 +27,7 @@ The orignal instruction asks to use a number of compiler options in order to opt
 
 Please use: -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72
 
+## 3. Troubleshooting
+
+If your hexapod acts like in slow-motion please check if you have specified the correct id's in phantomX.yaml. The origianl phantomX.yaml file specifies two additional ax12 for a camera gimabl and has changed the ID of one ax12a from 1 to 19. The phantomX.yaml file in this branch uses the ID's as given in the PhantomX mark III assembly instructions and the camera gimbal has been removed.
+
