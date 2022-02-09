@@ -12,18 +12,18 @@ This fork has been ported to ROS-Noetic on Ubuntu 20.04 LTS running on a Raspber
 The project makes use of a 
 
 * PhantomX Mark III
-* ** The ArbotixM Board was replaced by a U2D2-Connector
-* ** For connecting all legs we also need a U2D2 PowerHub
-* ** Since connectors have changed an adapter cable is needed too
+  * The ArbotixM Board was replaced by a U2D2-Connector
+  * For connecting all legs we also need a U2D2 PowerHub
+  * Since connectors have changed an adapter cable is needed too
 * Sensors
-* ** IMU: MPU2955
-* ** DepthSensor: Orbbec Astra Camera
+  * IMU: MPU2955
+  * DepthSensor: Orbbec Astra Camera
 * Controller
-* ** XBox360 Wireless
+  * XBox360 Wireless
 
 ## 2. Compiling
 
-The orignal instruction asks to use a number of compiler options in order to optimize the code. However, since we are using an RPI4 on a 64Bit Ubuntu, we don'Ät need all of them.
+The orignal instruction asks to use a number of compiler options in order to optimize the code. However, since we are using an RPI4 on a 64Bit Ubuntu, we do not need all of them.
 
 Please use: -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72
 
