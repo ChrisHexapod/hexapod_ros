@@ -23,7 +23,7 @@ The project makes use of a
 
 ## 2. Installation
 
-In addition to the ROS packages mentioned in the orignal project (switch indigo to noetic) yoa also need:
+In addition to the ROS packages mentioned in the orignal project (switch indigo to noetic) you also need:
 
 * ROS MPU9255 Node by Mauricio Leiton Lázaro
   *  URL: https://github.com/mdleiton/MPU9255
