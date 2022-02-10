@@ -63,4 +63,5 @@ If your hexapod acts like in slow-motion please check if you have specified the 
 
 ## 7. Pics
 
+![IMG_20220210_112945502](https://user-images.githubusercontent.com/97293339/153389677-666551e6-4639-4c3a-8491-f92fc7495599.jpg)
 
