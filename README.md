@@ -60,3 +60,8 @@ If your hexapod acts like in slow-motion please check if you have specified the 
 ## 6. Things to Do
 
 * Upgrade the Dynamixel SDK from 3.6.0 to 3.7.31
+
+## 7. Pics
+
+
+![IMG_20220210_112945502](https://user-images.githubusercontent.com/97293339/153389051-276eae4b-66fa-4792-8595-4b8ab6386c01.jpg)
