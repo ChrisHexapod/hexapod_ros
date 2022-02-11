@@ -55,7 +55,9 @@ Since we are using an Ubuntu server image, we cannot start any GUI applications 
 
 ## 5. Troubleshooting
 
-If your hexapod acts like in slow-motion please check if you have specified the correct id's in phantomX.yaml. The original phantomX.yaml file specifies two additional ax12 for a camera gimbal and the ID of another ax12a was changed to 19 (instead of 1). The phantomX.yaml file in this branch uses the ID's as given in the PhantomX mark III assembly instructions and the camera gimbal has been removed.
+* If your hexapod acts like in slow-motion please check if you have specified the correct id's in phantomX.yaml. The original phantomX.yaml file specifies two additional ax12 for a camera gimbal and the ID of another ax12a was changed to 19 (instead of 1). The phantomX.yaml file in this branch uses the ID's as given in the PhantomX mark III assembly instructions and the camera gimbal has been removed.
+
+* The MPU9255 was written some time ago and is not really adapted towards tf2. So if you are getting error mesages that contain "....at line 134 in /tmp/binarydeb/ros-noetic-tf2-0.7.5/src/buffer_core.cpp..." you have to change line 42 in MPU9255_node.cpp from: "data_imu.header.frame_id = "/imu_link";" to "data_imu.header.frame_id = "imu_link"
 
 ## 6. Things to Do
 
