@@ -16,15 +16,15 @@
         </plugin>
     </gazebo>
 
-    <link name="base_link"/>
+    <link name="base_footprint"/>
 
     <joint name="base_joint" type="fixed">
-        <parent link="base_link" />
-        <child link="body_link" />
+        <parent link="base_footprint" />
+        <child link="base_link" />
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
     </joint>
 
-	<link name="body_link">
+	<link name="base_link">
 			<visual>
 	  			<origin	xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
       			<geometry>
@@ -58,7 +58,7 @@
 
 	<!-- Head Pan and Tilt properties -->
 	<joint name="head_pan_joint" type="revolute">
-		<parent link="body_link"/>
+		<parent link="base_link"/>
 		<child link="head_pan_link"/>
 		<axis xyz="0.0 0.0 1.0" />
 		<origin xyz="0.145 0.0 0.080" />
@@ -171,7 +171,7 @@
 		<!-- leg position -->
 		<joint name="leg_center_joint_${side}${position}" type="fixed">
 			<origin xyz="${x} ${y} 0.0" rpy="0.0 0.0 0.0" />
-			<parent link="body_link" />
+			<parent link="base_link" />
 			<child link="leg_center_${side}${position}" />
 		</joint>
 
