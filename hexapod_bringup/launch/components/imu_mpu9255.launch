@@ -1,0 +1,20 @@
+<launch>
+	<node pkg="imu_calib" type="apply_calib" name="apply_calib" output="screen" respawn="false">
+        <param name="calib_file" value="$(find hexapod_ros)/param/imu/imu_calib.yaml" />
+        <param name="calibrate_gyros" value="true" />
+    </node>
+  
+  <node pkg="MPU9255" name="MPU9255_node" type="MPU9255_node"/>
+ 
+	<node pkg="imu_complementary_filter" type="complementary_filter_node" name="complementary_filter_node" output="screen">
+		<param name="fixed_frame" value="base_footprint"/>
+		<param name="use_mag" value="true"/>
+		<param name="do_bias_estimation" value="true"/>
+		<param name="do_adaptive_gain" value="true"/>
+		<param name="gain_acc" value="0.01"/>
+		<param name="gain_mag" value="0.01"/>
+ 		<param name="publish_tf"    value="false"/>
+    <param name="world_frame" value="enu" />
+	</node>
+
+</launch>
