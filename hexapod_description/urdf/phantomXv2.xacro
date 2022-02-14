@@ -58,7 +58,7 @@
 
 	<!-- Head Pan and Tilt properties -->
 	<joint name="head_pan_joint" type="revolute">
-		<parent link="base_link"/>
+		<parent link="body_link"/>
 		<child link="head_pan_link"/>
 		<axis xyz="0.0 0.0 1.0" />
 		<origin xyz="0.145 0.0 0.080" />
