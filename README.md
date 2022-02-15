@@ -31,8 +31,10 @@ In addition to the ROS packages mentioned in the original project (since we swit
   *  URL: https://github.com/mdleiton/MPU9255
   *  Since this is an I2C sensor you need to have I2C activated on your Pi and you have to install the WiringPi library too (https://github.com/wbeebe/WiringPi).
   *  Ignore warnings regarding naming conventions
-* imu_calin Node by Daniel Koch
-  * https://github.com/dpkoch/imu_calib
+* imu_calib Node by Daniel Koch
+  * https://github.com/dpkoch/imu_calib or https://github.com/ChrisHexapod/imu_calib.git
+  * Please run do_calib first to get the correct data for your system
+  * Please check topics or use my fork
 * Astra Camera Node
   * http://wiki.ros.org/astra_camera  
 * XBox Driver
