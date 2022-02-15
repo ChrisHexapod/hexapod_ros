@@ -11,14 +11,14 @@
       <arg name="config" value="$(arg config)"/>
       <arg name="joy_mapping" default="$(arg joy_mapping)"/>
     </include>
-
-<!--    <include file="$(find hexapod_bringup)/launch/components/imu_mpu9255.launch" />-->
-
+<!-- Start the IMU Sensor -->
+    <include file="$(find hexapod_bringup)/launch/components/imu_mpu9255.launch" />
 <!-- Start the Astra Camera -->
-    <!--<include file="$(find astra_camera)/launch/astra.launch" />-->
-
-<!--     <include file="$(find hexapod_bringup)/launch/components/robot_localization_ekf.launch" />-->
-<!--     <include file="$(find hexapod_bringup)/launch/components/depth_laserscan.launch" />    -->
-<!--     <include file="$(find hexapod_bringup)/launch/components/rtabmap.launch" />-->
-
+    <include file="$(find astra_camera)/launch/astra.launch" />
+<!-- Start Localization -->
+    <include file="$(find hexapod_bringup)/launch/components/robot_localization_ekf.launch" />
+<!-- Start generating laser messages -->
+    <include file="$(find hexapod_bringup)/launch/components/depth_laserscan.launch" />
+<!-- Start Mapping -->
+    <include file="$(find hexapod_bringup)/launch/components/rtabmap.launch" />
 </launch>
