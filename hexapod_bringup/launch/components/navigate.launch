@@ -1,0 +1,11 @@
+<launch>
+    <!-- Map server -->
+    <arg name="map_file" default="$(find hexapod_description)/maps/house.yaml"/>
+    <node pkg="map_server" name="map_server"  type="map_server" args="$(arg map_file)" />
+
+    <!-- AMCL used for localization -->
+    <include file="$(find hexapod_bringup)/launch/components//amcl.launch" />
+    
+    <!-- Calls navigation stack package -->
+    <include file="$(find hexapod_bringup)/launch/components/move_base.launch" />
+</launch>
