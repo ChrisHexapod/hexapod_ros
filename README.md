@@ -33,7 +33,7 @@ In addition to the ROS packages mentioned in the original project (since we swit
   *  Ignore warnings regarding naming conventions
 * imu_calib Node by Daniel Koch (orig) and Juan Miguel Jimeno (fork)
   * https://github.com/dpkoch/imu_calib or https://github.com/ChrisHexapod/imu_calib.git
-  * Please run do_calib first to get the correct data for your system
+  * Please run do_calib first to get the correct calibration data for your system
   * Please check topics or use my fork
 * Astra Camera Node
   * http://wiki.ros.org/astra_camera  
