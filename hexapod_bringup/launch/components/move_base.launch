@@ -1,1 +1,2 @@
 <!-- TBD -->
+<!-- Requires: Params for Common&Local&global Costmap, as well as params for local planner (TEB) and move_base itself -->  
