@@ -71,8 +71,19 @@ The original PhantomX Model in this stack assumed two servos (pan & tilt) for th
 
 ## 7. Pics
 
+Top-View (no camera)
+
 ![IMG_20220210_112945502](https://user-images.githubusercontent.com/97293339/153389677-666551e6-4639-4c3a-8491-f92fc7495599.jpg)
 
+Camera
 
+![IMG_20220217_125013012](https://user-images.githubusercontent.com/97293339/154475976-1239dd16-da02-47c3-8d05-65a8e55cee28.jpg)
+
+Middle-Deck (U2D2)
+
+![IMG_20220217_124609279](https://user-images.githubusercontent.com/97293339/154476051-80a34afc-d07a-4283-adb7-8de5d970bb75.jpg)
+
+
+TF-Tree
 ![frames](https://user-images.githubusercontent.com/97293339/154475328-af050dba-d370-46c5-b245-3f1450307a61.png)
 
