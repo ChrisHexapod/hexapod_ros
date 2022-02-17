@@ -53,9 +53,11 @@ Since we are using an Ubuntu server image, we cannot start any GUI applications 
 
 * RPI
   * roslaunch hexapod_bringup hexapod_simple.launch (Locomotion only, no navigation) or
-  * roslaunch hexapod_bringup hexapod_pi.launch (Full stack adapted to the new sensors)
+  * roslaunch hexapod_bringup hexapod_pi_local.launch (Full stack adapted to the new sensors, including rtabmap running on the Pi)
+  * roslaunch hexapod_bringup hexapod_pi_remote.launch (Full stack except mapping or slamming)
 * Remote Computer
-  * roslaunch hexapod_bringup rviz.launch
+  * roslaunch hexapod_bringup rviz.launch (just visualization)
+  * roslaunch hexapod_bringugp hexapod_remote_slam.launch (runs gmapping or hector on the remote computer and visualizes this via rviz)
 
 The original PhantomX Model in this stack assumed two servos (pan & tilt) for the camera. In my case the camera is mounted directly to the hexyapod body. Therefore I reduced the number of servos (NUMBER_OF_HEAD_SEGMENTS: 0) in the phantomX.yaml file (params) and set the link type to "fixed" in the URDF description.
 
