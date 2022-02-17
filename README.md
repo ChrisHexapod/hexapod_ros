@@ -74,5 +74,5 @@ The original PhantomX Model in this stack assumed two servos (pan & tilt) for th
 ![IMG_20220210_112945502](https://user-images.githubusercontent.com/97293339/153389677-666551e6-4639-4c3a-8491-f92fc7495599.jpg)
 
 
-![frames](https://user-images.githubusercontent.com/97293339/154439438-7865b98c-8846-43f6-a9d0-b9c61f888803.png)
+![frames](https://user-images.githubusercontent.com/97293339/154475328-af050dba-d370-46c5-b245-3f1450307a61.png)
 
