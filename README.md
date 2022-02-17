@@ -47,7 +47,7 @@ The orignal instruction asks to use a number of compiler options in order to opt
 
 Please use: -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72
 
-## 4. Assumptions
+## 4. Assumptions / Notes
 
 Since we are using an Ubuntu server image, we cannot start any GUI applications on the PI. Therefore launch files have been split to robot specific ones and those that should be started on a GUI device. The easiest way is to clone the repo to a remote computer and use:
 
@@ -56,6 +56,8 @@ Since we are using an Ubuntu server image, we cannot start any GUI applications 
   * roslaunch hexapod_bringup hexapod_pi.launch (Full stack adapted to the new sensors)
 * Remote Computer
   * roslaunch hexapod_bringup rviz.launch
+
+The original PhantomX Model in this stack assumed two servos (pan & tilt) for the camera. In my case the camera is mounted directly to the hexyapod body. Therefore I reduced the number of servos (NUMBER_OF_HEAD_SEGMENTS: 0) in the phantomX.yaml file (params) and set the link type to "fixed" in the URDF description.
 
 ## 5. Troubleshooting
 
