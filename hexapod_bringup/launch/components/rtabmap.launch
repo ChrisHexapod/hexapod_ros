@@ -2,9 +2,10 @@
 <!-- rtabmap launch file -->
 
 <launch>
-  <!-- Publish static transform from base_footprint to base_link -->
-    <node pkg="tf2_ros" type="static_transform_publisher" name="base_footprint_to_base_link" args="0 0 0.098 0 0 0  /base_link /camera_link"/>
-    <group ns="rtabmap">
+   <!-- Publish static transform from base_link to camera_link ; Adapt z-Value to the correct camera height -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_camera_link" args="0 0 0.098 0 0 0  /base_link /camera_link"/>
+    
+  <group ns="rtabmap">
         <!-- sync depth with odometry -->
         <node pkg="nodelet" type="nodelet" name="standalone_nodelet" args="manager"/>
         <node pkg="nodelet" type="nodelet" name="data_odom_sync" args="load rtabmap_ros/data_odom_sync standalone_nodelet">
