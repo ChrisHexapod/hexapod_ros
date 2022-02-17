@@ -77,7 +77,7 @@ Top-View (no camera)
 
 Camera
 
-![IMG_20220217_125013012](https://user-images.githubusercontent.com/97293339/154475976-1239dd16-da02-47c3-8d05-65a8e55cee28.jpg)
+![IMG_20220217_124609279](https://user-images.githubusercontent.com/97293339/154476293-675372ba-2e4e-4e88-b942-c93cfa35d6fd.jpg)
 
 Middle-Deck (U2D2)
 
