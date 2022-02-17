@@ -1,0 +1,1 @@
+This launch files are based on those used by the Turtlebot3 (https://github.com/ROBOTIS-GIT/turtlebot3/blob/master/turtlebot3_slam/launch/). They have been adapted for the Hexapod Stack regarding topics and other settings. Please check if they fit your setting.
