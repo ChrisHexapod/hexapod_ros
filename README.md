@@ -71,3 +71,6 @@ Since we are using an Ubuntu server image, we cannot start any GUI applications 
 
 ![IMG_20220210_112945502](https://user-images.githubusercontent.com/97293339/153389677-666551e6-4639-4c3a-8491-f92fc7495599.jpg)
 
+
+![frames](https://user-images.githubusercontent.com/97293339/154439438-7865b98c-8846-43f6-a9d0-b9c61f888803.png)
+
