@@ -8,7 +8,7 @@ The original project was developed based on ROS Indigo targeted at Ubuntu 14.04,
 With this fork the original project is ported to ROS Noetic on Ubuntu 20.04 LTS (Server Edition) running on a RaspberryPi 4 (4GB).  
 
 
-## 1. Hardware
+## 1. Hardware & Software
 
 The project makes use of a 
 
@@ -18,8 +18,11 @@ The project makes use of a
   * Since connectors have changed an adapter cable is needed too.
   * You also have to think about power supply for your RaspberryPi. Here splice connectors were used to attach a 5V,3A BEC to the Pi using a spare USB-C connector.
 * Onboard Unit (SBC)
-  * Raspberry Pi 4B; 4GB Version  
-* Sensors
+  * Raspberry Pi 4B; 4GB Version
+  * Ubuntu 20.04 LTS, server install
+  * ROS noetic
+  * Hexapod-ROS stack (this repo)  
+* Sensors (requires additional software install)
   * IMU: MPU2955
   * DepthSensor: Orbbec Astra Camera
 * Controller
