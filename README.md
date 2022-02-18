@@ -17,6 +17,8 @@ The project makes use of a
   * Since the U2D2 has only one ttl-level port you either need a U2D2 PowerHub, or the old 6 port hub (in addition to the PhantomX Hub).
   * Since connectors have changed an adapter cable is needed too.
   * You also have to think about power supply for your RaspberryPi. Here splice connectors were used to attach a 5V,3A BEC to the Pi using a spare USB-C connector.
+* Onboard Unit (SBC)
+  * Raspberry Pi 4B; 4GB Version  
 * Sensors
   * IMU: MPU2955
   * DepthSensor: Orbbec Astra Camera
