@@ -59,7 +59,7 @@ Since we are using an Ubuntu server image, we cannot start any GUI applications 
   * roslaunch hexapod_bringup rviz.launch (just visualization)
   * roslaunch hexapod_bringugp hexapod_remote_slam.launch (runs gmapping or hector on the remote computer and visualizes this via rviz)
 
-The original PhantomX Model in this stack assumed two servos (pan & tilt) for the camera. In my case the camera is mounted directly to the hexyapod body. Therefore I reduced the number of servos (NUMBER_OF_HEAD_SEGMENTS: 0) in the phantomX.yaml file (params) and set the link type to "fixed" in the URDF description.
+The original PhantomX Model in this stack assumed two servos (pan & tilt) for the camera. In my case the camera is mounted directly to the hexapod body. Therefore I reduced the number of servos (NUMBER_OF_HEAD_SEGMENTS: 0) in the phantomX.yaml file (params) and set the link type to "fixed" in the URDF description.
 
 ## 5. Troubleshooting
 
