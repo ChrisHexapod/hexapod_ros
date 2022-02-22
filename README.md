@@ -48,7 +48,7 @@ In addition to the ROS packages mentioned in the original project (since we swit
 
 ## 3. Compiling
 
-The orignal instruction asks to use a number of compiler options in order to optimize the code. However, since we are using an RPI4 on a 64Bit Ubuntu, we do not need all of them.
+The original instruction asks to use a number of compiler options in order to optimize the code. However, since we are using an RPI4 on a 64Bit Ubuntu, we do not need all of them.
 
 Please use: -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72
 
