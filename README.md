@@ -82,7 +82,8 @@ Click on a picture for a redirect to the YouTube video.
 
 * Locomotion - Test
 
-https://youtu.be/M7LpC2mJC_o
+https![video01](https://user-images.githubusercontent.com/97293339/155123447-d0506832-d7cc-46bb-bfd8-43f812c35e7e.jpg)
+://youtu.be/M7LpC2mJC_o
 
 ## 8. Pics
 
