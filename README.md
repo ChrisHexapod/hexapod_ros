@@ -80,6 +80,10 @@ The original PhantomX Model in this stack assumed two servos (pan & tilt) for th
 ## 7. Videos
 Click on a picture for a redirect to the YouTube video.
 
+* Locomotion - Test
+
+https://youtu.be/M7LpC2mJC_o
+
 ## 8. Pics
 
 * Top-View (no camera)
