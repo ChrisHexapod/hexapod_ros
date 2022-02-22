@@ -85,6 +85,10 @@ Click on the link below a picture for a redirect to the YouTube video.
 ![video01](https://user-images.githubusercontent.com/97293339/155123447-d0506832-d7cc-46bb-bfd8-43f812c35e7e.jpg)
 https://youtu.be/M7LpC2mJC_o
 
+* IMU Integration and Level Balancing (TBD)
+* RTABMAP-Slam (TBD)
+* Navigation (TBD)
+
 ## 8. Pics
 
 * Top-View (no camera)
