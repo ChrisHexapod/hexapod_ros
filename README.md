@@ -78,12 +78,12 @@ The original PhantomX Model in this stack assumed two servos (pan & tilt) for th
 * Upgrade the Dynamixel SDK from 3.6.0 to 3.7.31
 
 ## 7. Videos
-Click on a picture for a redirect to the YouTube video.
+Click on the link below a picture for a redirect to the YouTube video.
 
 * Locomotion - Test
 
-https![video01](https://user-images.githubusercontent.com/97293339/155123447-d0506832-d7cc-46bb-bfd8-43f812c35e7e.jpg)
-://youtu.be/M7LpC2mJC_o
+![video01](https://user-images.githubusercontent.com/97293339/155123447-d0506832-d7cc-46bb-bfd8-43f812c35e7e.jpg)
+https://youtu.be/M7LpC2mJC_o
 
 ## 8. Pics
 
