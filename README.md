@@ -45,6 +45,9 @@ In addition to the ROS packages mentioned in the original project (since we swit
   * http://wiki.ros.org/astra_camera  
 * RPLidar
   * sudo apt-get install ros-noetic-rplidar-ros
+  * To avoid problems we are using a fixed name (defined via udev): hexalidar
+  * Set following the guide published by the linorobot project (section 1.5): https://github.com/linorobot/linorobot/wiki/1.-Getting-Started
+  * The script can be foound in the "scripts" subfolder
 * Box Driver
   * sudo apt-get install xboxdrv  
   
