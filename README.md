@@ -17,6 +17,7 @@ The project makes use of a
   * Since the U2D2 has only one ttl-level port you either need a U2D2 PowerHub, or the old 6 port hub (in addition to the PhantomX Hub).
   * Since connectors have changed, two adapter cable (DYNAMIXEL Cable X3P -  X-Series to AX-Series) are needed too.
   * You also have to think about power supply for your RaspberryPi. Here splice connectors were used to attach a 5V,3A BEC to the Pi using a spare USB-C connector.
+  * The hexapod needs a depth-sensor. You can either use a depth-camera (e.g., Astra Cam) to have a fake laser and a 3D slam, or a standard ranging device such as a RPLidar.
 * Onboard Unit (SBC)
   * Raspberry Pi 4B; 4GB Version
   * Ubuntu 20.04 LTS, server install
@@ -24,7 +25,7 @@ The project makes use of a
   * Hexapod-ROS stack (this repo)  
 * Sensors (requires additional software install)
   * IMU: MPU2955
-  * DepthSensor: Orbbec Astra Camera
+  * DepthSensor: Orbbec Astra Camera or RPLidar
 * Controller
   * XBox360 Wireless
 
@@ -42,7 +43,9 @@ In addition to the ROS packages mentioned in the original project (since we swit
   * Please check topics or use my fork
 * Astra Camera Node
   * http://wiki.ros.org/astra_camera  
-* XBox Driver
+* RPLidar
+  * sudo apt-get install ros-noetic-rplidar-ros
+* Box Driver
   * sudo apt-get install xboxdrv  
   
 
