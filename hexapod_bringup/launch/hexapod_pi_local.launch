@@ -15,13 +15,29 @@
     </include>
 <!-- Start the IMU Sensor -->
     <include file="$(find hexapod_bringup)/launch/components/imu_mpu9255.launch" />
-<!-- Start the Astra Camera -->
-    <include file="$(find astra_camera)/launch/astra.launch" />
-<!-- Start Localization -->
-    <include file="$(find hexapod_bringup)/launch/components/robot_localization_ekf.launch" />
-<!-- Start generating laser messages -->
-    <include file="$(find hexapod_bringup)/launch/components/depth_laserscan.launch" />
-<!-- Start Scanning -->
-    <include file="$(find hexapod_bringup)/launch/components/rtabmap.launch" if="$(eval arg('depth_sensor') == 'astra')"/>
-    <include file="$(find hexapod_bringup)/launch/components/lidar.launch" if="$(eval arg('depth_sensor') == 'rplidar')"/>
+    
+<!-- Camera based System -->
+    <group if="$(eval arg('depth_sensor') == 'astra')">
+        <!-- Start the Astra Camera -->
+          <include file="$(find astra_camera)/launch/astra.launch" />
+        <!-- Start generating laser messages -->
+          <include file="$(find hexapod_bringup)/launch/components/depth_laserscan.launch" />
+        <!-- Start Localization -->
+          <include file="$(find hexapod_bringup)/launch/components/robot_localization_ekf.launch" />
+        <!-- Start Scanning -->
+          <include file="$(find hexapod_bringup)/launch/components/rtabmap.launch" />
+  </group>
+    
+<!-- Lidar based System -->
+    <group if="$(eval arg('depth_sensor') == 'lidar')">
+        <!-- Start the Lidar -->
+          <include file="$(find hexapod_bringup)/launch/components/lidar.launch" />
+        <!-- Start Localization -->
+          <include file="$(find hexapod_bringup)/launch/components/robot_localization_ekf.launch" />
+        <!-- Start Scanning -->
+          <include file="$(find hexapod_bringup)/launch/slam/gmapping.launch" />
+        <!-- Publish static transform of the laser. Define your sensor offset here -->
+          <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_laser" args="0.065 0 0.098 0 0 0  /base_link /laser"/>
+  </group>
+
 </launch>
