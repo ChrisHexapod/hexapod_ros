@@ -38,6 +38,7 @@ static const double PI = atan(1.0)*4.0;
 
 Control::Control( void )
 {
+    ros::param::get( "AUTO_LEVEL", AUTO_LEVEL , "false");
     ros::param::get( "NUMBER_OF_LEGS", NUMBER_OF_LEGS );
     ros::param::get( "NUMBER_OF_LEG_SEGMENTS", NUMBER_OF_LEG_JOINTS );
     ros::param::get( "NUMBER_OF_HEAD_SEGMENTS", NUMBER_OF_HEAD_JOINTS );
@@ -74,7 +75,7 @@ Control::Control( void )
     }
     prev_hex_state_ = false;
     hex_state_ = false;
-    imu_init_stored_ = false;
+    imu_init_stored_ = AUTO_LEVEL; //was false;
     imu_override_.data = false;
     imu_roll_lowpass_ = 0.0;
     imu_pitch_lowpass_ = 0.0;
