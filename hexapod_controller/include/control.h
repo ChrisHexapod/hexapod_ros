@@ -80,7 +80,7 @@ class Control
     private:
         hexapod_msgs::Sounds sounds_; // Sound bool array
         std_msgs::Bool imu_override_; // Override body levelling for body manipulation
-        bool imu_init_stored_; // Auto-levelling
+        bool imu_init_stored_, AUTO_LEVEL; // Auto-levelling
         double imu_roll_lowpass_, imu_pitch_lowpass_, imu_yaw_lowpass_, imu_roll_init_, imu_pitch_init_; // Auto-levelling
         double MAX_BODY_ROLL_COMP, MAX_BODY_PITCH_COMP, COMPENSATE_INCREMENT, COMPENSATE_TO_WITHIN; // Auto-levelling yaml config
         double BODY_MAX_ROLL, BODY_MAX_PITCH, BODY_MAX_YAW, HEAD_MAX_YAW, HEAD_MAX_PITCH; // Mechanical limits
