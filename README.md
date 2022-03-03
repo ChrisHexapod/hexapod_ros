@@ -26,6 +26,8 @@ The project makes use of a
 * Sensors (requires additional software install)
   * IMU: MPU2955
   * DepthSensor: Orbbec Astra Camera or RPLidar
+* Camera (optional)
+  * RPI Camera V2 with Fisheye-Lens 
 * Controller
   * XBox360 Wireless
 
@@ -47,6 +49,9 @@ In addition to the ROS packages mentioned in the original project (since we swit
   * sudo apt-get install ros-noetic-rplidar-ros
   * To avoid problems we are using a fixed name (defined via udev): rplidar
   * Set the udev rule by following the guide published by the rplidar project: https://github.com/robopeak/rplidar_ros/wiki
+* Raspicam Node
+  * git clone https://github.com/UbiquityRobotics/raspicam_node.git
+  * Test: roslaunch raspicam_node camerav2_1280x960.launch
 * Box Driver
   * sudo apt-get install xboxdrv  
   
