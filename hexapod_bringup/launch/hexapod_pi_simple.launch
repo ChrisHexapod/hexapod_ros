@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Full bringup no visual nodes launch file ( Normal use, visual ran on remote desktop ) -->
+
+<launch>
+    <arg name="depth_sensor" default="camera"/>
+    <arg name="config" default="phantomX"/>
+    <arg name="joy_mapping" default="joystick_x360"/>
+    <!-- Launching sound first since some packages have initial sounds -->
+    <!--<include file="$(find hexapod_bringup)/launch/components/sounds.launch" />-->
+    <include file="$(find hexapod_bringup)/launch/hexapod_simple.launch">
+     <arg name="config" value="$(arg config)"/>
+     <arg name="joy_mapping" default="$(arg joy_mapping)"/>
+    </include>
+<!-- Start IMU readings -->
+    <include file="$(find hexapod_bringup)/launch/components/imu_mpu9255.launch" />
+<!-- Camera based System -->
+    <group if="$(eval arg('depth_sensor') == 'camera')">
+	<!-- Start the Astra Camera -->
+    	  <include file="$(find astra_camera)/launch/astra.launch" />
+	<!-- Start Localization -->
+    	  <include file="$(find hexapod_bringup)/launch/components/robot_localization_ekf.launch" />
+	<!-- Start transforming image data to laser data -->
+    	  <include file="$(find hexapod_bringup)/launch/components/depth_laserscan.launch" />
+    </group>
+<!-- Lidar based System -->
+    <group if="$(eval arg('depth_sensor') == 'lidar')">
+        <!-- Start RaspiCam -->
+          <include file="$(find hexapod_bringup)/launch/component/raspicam.launch" />
+        <!-- Start the Lidar -->
+          <include file="$(find hexapod_bringup)/launch/component/rplidar.launch" />
+        <!-- Start Localization -->
+          <include file="$(find hexapod_bringup)/launch/components/robot_localization_ekf.launch" />
+    </group>
+</launch>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Full bringup no visual nodes launch file ( Normal use, visual ran on remote desktop ) -->
+
+<launch>
+    <arg name="my_depth_sensor" default="camera"/>
+
+    <!-- Launch all relevant nodes -->
+    <include file="$(find hexapod_bringup)/launch/hexapod_pi_simple.launch" >
+	<arg name="depth_sensor" value=my_depth_sensor />
+    </include>
+    <!-- Start Slamming -->
+    <group if="$(eval my_depth_sensor == 'camera')">   
+	<!-- Start RTABMap -->
+    	<include file="$(find hexapod_bringup)/launch/components/rtabmap.launch" /> 
+    </group>
+    <group if="$(my_depth_sensor == 'lidar')">
+	<!-- Publish static transform of the laser. Define your sensor offset here -->
+        <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_laser" args="0.065 0 0.098 0 0 0  /base_link /laser"/>
+   	<include file="$(find hexapod_bringup)/launch/slam/gmapping.launch" />
+    </group>
+</launch>
