@@ -100,6 +100,9 @@ https://youtu.be/M7LpC2mJC_o
 ![video02](https://user-images.githubusercontent.com/97293339/155158277-90744553-d100-436f-af2b-b64d3d6ae9a5.jpg)
 https://youtu.be/v6pdMIswr5E
 
+* RPLidar and GMapping
+![Gmapping - Kopie](https://user-images.githubusercontent.com/97293339/157840289-16ca3fa7-decf-4851-892e-9ffc4cae1823.jpg)
+https://youtu.be/hZ9Ia3H3WBo
 
 * IMU Integration and Level Balancing (TBD)
 * RTABMAP-Slam (TBD)
