@@ -118,8 +118,12 @@ https://youtu.be/hZ9Ia3H3WBo
 * Camera
 
 ![154476839-ff9a976b-fabd-4206-91b5-cf93a295a139 - Kopie](https://user-images.githubusercontent.com/97293339/154690185-93f388c7-76ba-44e8-8dd6-01b0a18b9015.jpg)
+![IMG_20220311_120622612 - Kopie](https://user-images.githubusercontent.com/97293339/157856296-2c784fae-9937-4cee-b56d-cb0f31efeb09.jpg)
 
-![IMG_20220311_120622612 - Kopie](https://user-images.githubusercontent.com/97293339/157856132-67575a9c-03fa-45fd-b824-2467501c2500.jpg)
+* Lidar
+
+![IMG_20220311_120641316 - Kopie](https://user-images.githubusercontent.com/97293339/157856412-acafa3a9-85db-4b7c-bc14-782f40cb9e46.jpg)
+
 
 * Middle-Deck (U2D2)
 
