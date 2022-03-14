@@ -141,6 +141,6 @@ https://youtu.be/hZ9Ia3H3WBo
 
 * Hector-Map
 
-![HectorMap](https://user-images.githubusercontent.com/97293339/157853978-0c910594-92c8-41f4-8fc6-2bba397a1cbc.png)
+![hector rviz_ - RViz 14 03 2022 08_59_23 - Kopie](https://user-images.githubusercontent.com/97293339/158129498-9f6c4276-a769-4cf0-a929-8ca9668fa0cc.png)
 
 
