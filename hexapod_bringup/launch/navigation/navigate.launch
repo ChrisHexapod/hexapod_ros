@@ -1,0 +1,14 @@
+<launch>
+    <!-- Map server -->
+    <arg name="map_file" default="$(find hexapod_navigation)/maps/map.yaml"/>
+    <node pkg="map_server" name="map_server"  type="map_server" args="$(arg map_file)" />
+
+    <!-- AMCL used for localization -->
+    <include file="$(find hexapod_bringup)/launch/navigation/amcl.launch" />
+    
+    <!-- Start Mavigation -->
+    <include file="$(find hexapod_bringup)/launch/include/move_base/move_base).launch" />
+
+<!-- Start Visualization -->
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find hexapod_description)/rviz_prefs/navigate.rviz" />
+</launch>
