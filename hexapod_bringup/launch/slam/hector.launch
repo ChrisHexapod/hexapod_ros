@@ -11,7 +11,7 @@
     <param name="use_tf_pose_start_estimate" value="false"/>
 
     <!-- Map size / start point -->
-    <param name="map_resolution" value="0.05"/>
+    <param name="map_resolution" value="0.1"/>
     <param name="map_size" value="2048"/>
     <param name="map_start_x" value="0.5"/>
     <param name="map_start_y" value="0.5" />
@@ -21,7 +21,7 @@
 
     <param name="map_pub_period" value="2" />
     <param name="laser_min_dist" value="0.4" />
-    <param name="laser_max_dist" value="5.5" />
+    <param name="laser_max_dist" value="12" />
     <param name="output_timing" value="false" />
     <param name="pub_map_scanmatch_transform" value="true" />
     <param name="tf_map_scanmatch_transform_frame_name" value="scanmatcher_frame" />
